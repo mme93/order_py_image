@@ -22,6 +22,7 @@ def readImage():
     except Exception as e:
         # code that will be executed if any exception is raised
         print(f"An error occurred: {e}")
+        return e, 404
 
 
 @app.route('/')
