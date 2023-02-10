@@ -1,5 +1,4 @@
 from flask import Flask, request
-from flask_cors import CORS
 import json
 import image.ImageWorker as iw
 import image.ImageWorkerOnlyFileType as iwoft
