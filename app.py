@@ -6,7 +6,6 @@ import image.Base64Worker as b64
 import image.TextAnalyse as ta
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:4200'])
 
 
 @app.route('/readImage', methods=['POST'])
