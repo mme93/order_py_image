@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import CORS
 import json
 import image.ImageWorker as iw
 import image.ImageWorkerOnlyFileType as iwoft
@@ -6,7 +7,7 @@ import image.Base64Worker as b64
 import image.TextAnalyse as ta
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/readImage', methods=['POST'])
 def readImage():
